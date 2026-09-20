@@ -1,0 +1,100 @@
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #ffaeee;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* ---------- Header / Footer ---------- */
+.site-header {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* ---------- Card ---------- */
+.card {
+  /* margin: space OUTSIDE the card */
+  /* margin: 2rem auto;  */
+
+  /* border: line around the card */
+  border: 2px solid #e5e7eb;
+
+  /* padding: space INSIDE the card */
+  padding: 1.5rem;
+
+  /* max-width: 700px; */
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+/* ---------- Avatar ---------- */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ---------- Card Info ---------- */
+.card-info h2 {
+  margin: 0 0 0.5rem;
+}
+
+.card-info p {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+/* ---------- Links (Flexbox row) ---------- */
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Like Button ---------- */
+.like-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.like-btn:hover {
+  background: #f9fafb;
+}
+
+/* Toggled state */
+.like-btn.liked {
+  background: crimson;
+  color: white;
+  border-color: crimson;
+}
