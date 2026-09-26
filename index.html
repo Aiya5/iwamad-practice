@@ -1,59 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Card — Week 02</title>
-  <meta name="description" content="Week 02 profile card using semantic HTML, CSS box model, Flexbox, JavaScript and Tailwind.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <h1 class="font-bold text-blue-600">My Profile Card</h1>
-  </header>
-
-  <main>
-    <div class="w-full max-w-4xl mx-auto px-4">
-    <article class="card w-full p-6 rounded-xl my-8 flex flex-col sm:flex-row gap-4 items-center">
-      <img src="profile.jpg" alt="Profile photo" class="avatar">
-      <div class="card-info">
-        <h2 class="text-2xl font-bold">Gabdulkyzy Aiya</h2>
-        <p>Aspiring IT professional learning web development. I enjoy building clean interfaces and solving problems with code. Currently studying front-end and back-end fundamentals.</p>
-        <ul class="links">
-          <li><a href="mailto:a_gabdulkyzy@KBTU.KZ">Email</a></li>
-          <li><a href="https://github.com/Aiya5">GitHub</a></li>
-        </ul>
-        <button id="likeBtn" class="like-btn">♡ Like</button>
-      </div>
-    </article>
-    <div class="card-gallery w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-    <!-- Card 2 -->
-    <article class="card rounded-xl m-0 p-6 flex flex-col sm:flex-row items-center">
-        <div>
-            <h2 class="text-2xl font-bold">Languages</h2>
-            <p>HTML, CSS, JavaScript</p>
-        </div>
-    </article>
-
-    <!-- Card 3 -->
-    <article class="card rounded-xl m-0 p-6 flex flex-col sm:flex-row items-center">
-        <div>
-            <h2 class="text-2xl font-bold">Facts</h2>
-            <li>It management</li>
-            <li>3rd course</li>
-            <li>I love mentos</li>
-        </div>
-    </article>
-</div>
-</div>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Aiya</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iwamad</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
