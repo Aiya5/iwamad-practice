@@ -1,4 +1,4 @@
-import { useState } from "react";
+import LikeButton from "./LikeButton";
 
 type ProfileCardProps = {
   name: string;
@@ -17,8 +17,6 @@ function ProfileCard({
   email,
   github,
 }: ProfileCardProps) {
-  const [likes, setLikes] = useState(0);
-
   return (
     <article className="card">
       {avatarUrl && (
@@ -38,9 +36,7 @@ function ProfileCard({
             </a>
           </li>
         </ul>
-        <button className="like-btn" onClick={() => setLikes(likes + 1)}>
-          {likes > 0 ? `❤️ ${likes}` : "🤍 Like"}
-        </button>
+        <LikeButton />
       </div>
     </article>
   );
