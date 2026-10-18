@@ -1,3 +1,5 @@
+import Tag from "./ui/Tag";
+
 export type Skill = {
   id: number;
   label: string;
@@ -8,7 +10,7 @@ type SkillBadgeProps = {
 };
 
 function SkillBadge({ skill }: SkillBadgeProps) {
-  return <li className="skill-badge">{skill.label}</li>;
+  return <Tag label={skill.label} />;
 }
 
 export default SkillBadge;
