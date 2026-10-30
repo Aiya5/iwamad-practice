@@ -17,10 +17,11 @@ function Header({ title, subtitle }: HeaderProps) {
       {subtitle && <p className="subtitle">{subtitle}</p>}
       <p className="likes-count">❤️ {likes}</p>
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-      </nav>
+       <NavLink to="/">Home</NavLink>
+       <NavLink to="/skills">Skills</NavLink>
+       <NavLink to="/contact">Contact</NavLink>
+       <NavLink to="/register">Register</NavLink>
+      </nav>  
     </header>
   );
 }
